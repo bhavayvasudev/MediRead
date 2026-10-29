@@ -1,0 +1,73 @@
+.product-navigation { display:flex; flex-wrap:wrap; gap:8px 22px; padding:0 0 22px; margin-bottom:26px; border-bottom:1px solid var(--border); }
+.runtime-error { max-width:760px; margin:12vh auto; padding:28px; }
+.runtime-error p { margin:24px 0; line-height:1.8; color:var(--muted); }
+.product-navigation a { font-size:.8rem; color:var(--muted); padding:7px 0; }
+.product-navigation a:hover,.product-navigation a[aria-current=page] { color:var(--mint); text-decoration:underline; text-underline-offset:8px; }
+.product-section { padding:28px; margin-top:24px; }
+.product-section h2 { font-size:1.2rem; font-weight:550; margin-bottom:10px; }
+.product-section h3 { font-size:.95rem; font-weight:550; line-height:1.7; }
+.product-intro { margin:18px 0; }
+.product-two-col { display:grid; grid-template-columns:1fr 1fr; gap:24px; align-items:start; }
+.form-grid { display:grid; grid-template-columns:1fr 1fr; gap:0 24px; }
+.product-section .field { margin:18px 0; }
+.field select { width:100%; }
+.product-filters { display:flex; align-items:end; flex-wrap:wrap; gap:14px; margin:24px 0; }
+.product-filters .field { flex:1 1 145px; margin:0; }
+.product-filters .field:first-child { flex:2 1 190px; }
+.product-toolbar { display:flex; align-items:center; gap:24px; flex-wrap:wrap; margin-top:24px; }
+.product-blank { padding:38px 24px; text-align:center; }
+.product-blank h2 { font-size:1.15rem; margin-bottom:12px; }
+.product-blank p { max-width:60ch; margin-inline:auto; }
+.record-list { margin-top:18px; }
+.record-summary { display:flex; align-items:center; justify-content:space-between; gap:20px; padding:20px 0; border-bottom:1px solid var(--border); }
+.record-summary:last-child { border-bottom:0; }
+.record-summary strong,.record-summary small { display:block; }
+.record-summary strong { font-size:.95rem; }
+.product-section h2,.product-section h3,.record-summary strong,.composition-row strong,.activity-grid strong { overflow-wrap:anywhere; }
+.record-summary small { margin-top:8px; color:var(--muted); font-size:.75rem; }
+.record-summary:hover { color:var(--mint); }
+.evidence-field { padding-bottom:20px; border-bottom:1px solid var(--border); }
+.question-item { padding:22px 0; border-bottom:1px solid var(--border); }
+.question-item:last-child { border-bottom:0; }
+.snapshot { margin-top:22px; }
+details { margin:20px 0; }
+summary { cursor:pointer; color:var(--mint); font-size:.85rem; padding:8px 0; }
+pre { font:inherit; font-size:.8rem; white-space:pre-wrap; overflow-wrap:anywhere; line-height:1.8; }
+.record-facts { display:grid; gap:18px; margin:16px 0; }
+.record-facts dt { color:var(--muted); font-size:.75rem; margin-bottom:5px; }
+.record-facts dd { margin:0; white-space:pre-wrap; font-size:.9rem; overflow-wrap:anywhere; }
+.audit-checklist { min-width:0; border:1px solid var(--border); padding:8px 20px; border-radius:14px; margin-top:18px; }
+.audit-checklist legend { padding-inline:8px; font-size:.9rem; }
+.audit-photo { width:100%; max-height:320px; object-fit:contain; border-radius:12px; background:var(--bg); border:1px solid var(--border); }
+.audit-report { display:grid; grid-template-columns:minmax(0,1fr); gap:24px; margin:20px 0; }
+.audit-report:has(>img) { grid-template-columns:minmax(200px,.75fr) 1.5fr; }
+.report-list { list-style:none; padding:0; }
+.report-list li { display:flex; gap:15px; justify-content:space-between; border-bottom:1px solid var(--border); padding:12px 0; font-size:.8rem; line-height:1.7; }
+.report-list strong { white-space:nowrap; font-weight:500; color:var(--mint); }
+.improvements { padding-left:20px; color:var(--muted); font-size:.85rem; line-height:1.8; }
+.preserve-lines { white-space:pre-wrap; overflow-wrap:anywhere; }
+.composition-row { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px; padding:20px 0; border-bottom:1px solid var(--border); }
+.composition-row .check-row { flex:1 1 220px; color:var(--ink); }
+.composition-row .micro { display:block; margin-top:5px; }
+.comparison-table { margin-top:24px; }
+.comparison-table caption { text-align:left; padding:15px 0; color:var(--muted); font-size:.8rem; }
+.comparison-table table { min-width:640px; }
+.comparison-table td,.comparison-table th { vertical-align:top; max-width:330px; white-space:normal; overflow-wrap:anywhere; }
+.comparison-findings { display:grid; gap:20px; margin:24px 0; }
+.saved-comparison { border-top:1px solid var(--border); padding:24px 0 0; margin-top:24px; }
+.feature-launchers { display:grid; grid-template-columns:1fr 1fr; gap:18px; margin:26px 0; }
+.feature-launcher { display:flex; align-items:center; gap:20px; padding:24px; transition:border-color .2s,background .2s; }
+.feature-launcher:hover { border-color:var(--mint); background:var(--surface-raised); }
+.feature-launcher>svg:first-child { color:var(--mint); }
+.feature-launcher>div { flex:1; }
+.feature-launcher h2 { font-size:1rem; font-weight:550; }
+.feature-launcher p { font-size:.8rem; line-height:1.7; color:var(--muted); margin-top:6px; }
+.activity-grid { display:grid; grid-template-columns:1fr 1fr; gap:24px; margin:26px 0; }
+.activity-grid .recent-row { padding:18px 0; }
+.banner-art .label-illustration { width:360px; max-width:100%; filter:drop-shadow(0 22px 25px #0005); animation:medicine-float 7s ease-in-out infinite; }
+@keyframes medicine-float { 50% { transform:translateY(-9px) rotate(2deg); } }
+.high-contrast .product-section { background:var(--bg); }
+@media(prefers-reduced-motion:reduce) { .banner-art .label-illustration { animation:none; } }
+.reduced-motion .banner-art .label-illustration { animation:none; }
+@media(max-width:900px) { .product-two-col { grid-template-columns:1fr; } .audit-report:has(>img) { grid-template-columns:1fr; } }
+@media(max-width:650px) { .feature-launchers,.activity-grid,.form-grid { grid-template-columns:1fr; } .product-section { padding:20px; } .product-section>.split,.saved-comparison>.split { flex-wrap:wrap; } .product-navigation { gap:8px 18px; } .product-toolbar { gap:16px; } .question-panel>.split { flex-wrap:wrap; } .report-list li { flex-wrap:wrap; gap:5px; } }

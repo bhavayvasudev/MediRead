@@ -1,0 +1,7 @@
+node_modules/
+dist/
+dist-server/
+public/ocr/
+tmp/
+test-results/
+playwright-report/

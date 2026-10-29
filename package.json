@@ -1,0 +1,42 @@
+﻿{
+    "name":  "mediread",
+    "private":  true,
+    "version":  "0.0.0",
+    "type":  "module",
+    "scripts":  {
+                    "test":  "node --test tests/*.test.mjs",
+                    "dev":  "vite",
+                    "build":  "npm run build:frontend \u0026\u0026 npm run build:server",
+                    "lint":  "oxlint --ignore-path .oxlintignore",
+                    "preview":  "vite preview",
+                    "validate":  "npm run lint \u0026\u0026 npm test \u0026\u0026 npm run build \u0026\u0026 node scripts/check-dist.mjs",
+                    "test:e2e":  "npm run build \u0026\u0026 playwright test",
+                    "build:frontend":  "tsc -b \u0026\u0026 vite build",
+                    "build:server":  "tsc -p server/tsconfig.json",
+                    "dev:server":  "node --env-file-if-exists=.env --watch server/index.ts",
+                    "start":  "node --env-file-if-exists=.env dist-server/server/index.js"
+                },
+    "dependencies":  {
+                         "cors":  "^2.8.6",
+                         "express":  "^5.3.0",
+                         "helmet":  "^8.3.0",
+                         "lucide-react":  "^1.63.0",
+                         "react":  "^19.3.1",
+                         "react-dom":  "^19.3.1"
+                     },
+    "devDependencies":  {
+                            "@playwright/test":  "^1.64.1",
+                            "@types/cors":  "^2.8.19",
+                            "@types/express":  "^5.0.6",
+                            "@types/node":  "^24.19.2",
+                            "@types/react":  "^19.3.0",
+                            "@types/react-dom":  "^19.3.0",
+                            "@vitejs/plugin-react":  "^6.1.2",
+                            "oxlint":  "^1.89.0",
+                            "typescript":  "~7.0.2",
+                            "vite":  "^8.3.5"
+                        },
+    "engines":  {
+                    "node":  "\u003e=24.0.0 \u003c25"
+                }
+}

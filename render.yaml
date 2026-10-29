@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: mediread-api
+    runtime: node
+    plan: free
+    buildCommand: npm ci --include=dev && npm run build:server
+    startCommand: npm start
+    healthCheckPath: /ready
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NODE_VERSION
+        value: 24.12.0
+      - key: CORS_ORIGINS
+        sync: false
